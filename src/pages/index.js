@@ -13,7 +13,8 @@ export default function Home({ products }) {
           name='description'
           content='Amazon clone made with Next.js' />
         <meta name='keywords' content='amazon, clone, next.js, javascript' />
-        <meta name='author' content='Adesina Mark' />
+        <meta name='author' content='Adesina Mark Omoniyi' />
+        <meta name='copyright' content='Adesina Mark Omoniyi' />
       </Head>
       <Header />
       <main className='max-w-screen-2xl mx-auto'>
