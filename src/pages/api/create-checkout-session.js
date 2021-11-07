@@ -1,4 +1,4 @@
-const stripe = require('stripe')('sk_test_RlbgmTYYETA85U4o4a2qRILa');
+const stripe = require('stripe')(`${process.env.STRIPE_SECRET_KEY}`);
 
 export default async (req, res) => {
     try {
