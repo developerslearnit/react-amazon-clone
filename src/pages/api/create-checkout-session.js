@@ -1,5 +1,7 @@
 const stripe = require('stripe')(`${process.env.STRIPE_SECRET_KEY}`);
 
+console.log(`create-checkoutcalled`)
+
 export default async (req, res) => {
     try {
         const { items, email } = req.body;
@@ -35,7 +37,7 @@ export default async (req, res) => {
         return res.status(200).json({ id: session.id });
 
     } catch (err) {
-        console.log(err)
+        console.log('error', err)
         res.status(500).end();
     }
 }
